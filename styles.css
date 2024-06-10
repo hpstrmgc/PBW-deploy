@@ -1,0 +1,551 @@
+/* Global Styles */
+html {
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+.current{
+    font-weight: bold;
+    background-color: #ff1c28a3;
+}
+
+.h1{
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(223, 223, 223);
+}
+
+.gambar-00 img{
+    width: 30em;
+    height: auto;
+}
+
+.gambar-01 img{
+    width: 30em;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*
+.img01{
+    height: 80%;
+    width: auto;
+}
+*/
+.main-container-00{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    padding-bottom: 9em;
+}
+
+.main-container-01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10em;
+    margin-bottom: 7em;
+}
+
+.ul-00{
+    display: flex;
+    list-style: none;
+}
+
+.ul-01 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.team{
+    padding-bottom: 8em;
+}
+
+ul {
+    padding: 0;
+}
+
+.ul-00 li{
+    margin-right: 10px;
+}
+
+.cta-00 {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgb(255, 208, 99);
+    border-radius: 10px;
+    border: solid 1px rgb(255, 208, 99);
+    animation: outline-animation 2s infinite; /* animasi */
+}
+
+@keyframes outline-animation {
+    0% { border-color: transparent; }
+    50% { border-color: #9e0000; }
+    100% { border-color: transparent; }
+}
+
+.cta-00:hover {
+    animation-play-state: paused;
+    background-color: rgb(130, 252, 130);
+    color: black;
+}
+
+.cta-001 {
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.page00{
+    font-family: 'Inter', sans-serif;
+    background-color: #fd5c63;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    color: white;
+}
+
+.page01{
+    font-family: 'Inter', sans-serif;
+    background-color: #fd5c63;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    color: white;
+}
+
+.page02{
+    font-family: 'Inter', sans-serif;
+    background-color: #fd5c63;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    color: white;
+}
+
+/* CSS */
+.sect011, .sect012, .team {
+    position: relative;
+    padding-left: 50px; /* Adjust as needed */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 0s; /* Default value */
+}
+
+.sect011.visible, .sect012.visible, .team.visible {
+    opacity: 1;
+}
+
+.sect011::before, .sect012::before, .team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* Adjust as needed */
+    height: 100%;
+    width: 2px; /* Adjust as needed */
+    background: #ffffff; /* Adjust as needed */
+}
+
+#next{
+    background-color: #ff454e;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    cursor:pointer;
+    position: absolute;
+    top: 50%; /* Position it at the middle of the parent element */
+    left: 0; /* Position it at the left of the parent element */
+    transform: translate(380% ,-50%); /* Center the button vertically */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #fd5c63;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+/* CSS */
+.namecard {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 0.5s ease;
+    list-style: none;
+    background-color: #ff454e;
+    color: white;
+    width: 400px; /* Adjust as needed */
+    height: 600px; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px; /* Optional: to give a card-like appearance */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Optional: to give a shadow effect */
+}
+
+.namecard img {
+    width: 100%;
+    height: auto; /* This will maintain the aspect ratio of the image */
+    object-fit: cover; /* This will make sure the image covers the entire space of the container */
+    max-height: 80%; /* This will limit the height of the image to 80% of the card */
+    border-radius: 10px; /* Optional: to give a card-like appearance */
+}
+
+.namecard:not(.active) {
+    transform: translateX(100px) scale(0.9); /* Adjust as needed */
+    opacity: 0.7; /* Adjust as needed */
+}
+
+.namecard.active {
+    z-index: 2;
+}
+
+.h201{
+    text-align: center;
+    font-size: 2em;
+}
+
+.stand-out{
+    background-color: #ff454e;
+    border-radius: 5px;
+}
+
+
+.namecard:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+/* CSS */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.search-bar {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+
+.search{
+    font-size: medium;
+    position: fixed;
+    padding: 5px;
+    width: 80%;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Added box shadow */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #ff454e;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add shadow */
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.product:hover {
+    transform: translateY(-10px); /* Lift the element up when hovered */
+}
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px; /* Adjust this value as needed */
+    padding-top: 60px; /* Adjust this value as needed */
+}
+
+.category {
+    padding-top: 95px; /* Adjust this value to match the combined height of your navbar and search bar */
+    margin-top: -95px; /* This should be the negative value of padding-top */
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* CSS */
+.sidebar {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    top: 80px; /* Adjust this value as needed */
+    left: 0;
+    width: 150px;
+    height: calc(70% - 60px); /* Adjust this value as needed */
+    overflow: auto;
+    background-color: #ff454e;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); /* Added box shadow */
+}
+
+.sidebar .nav02 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .nav02 ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar .nav02 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav02 ul li a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.product-grid {
+    margin-left: 100px; /* Adjust this value as needed */
+}
+
+.not-found-message {
+    position: fixed;
+    transform: translate(300%, 200%);
+}
+
+.small-img {
+    width: 100%; /* This will make the image width adjust to its natural width */
+    height: auto;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price p{
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+    font-size: medium;
+}
+
+.desc {
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: break-word; /* Use overflow-wrap instead of overflow */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.socmed-container{
+    background-color: #ffffff;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add this line */
+}
+
+.socmed-container img {
+    transition: all 0.3s ease; /* Add transition */
+}
+
+.socmed-container img:hover {
+    transform: scale(1.1); /* Scale the image up when hovered */
+    cursor: pointer;
+}
+
+/* CSS for screens smaller than 600px */
+@media (max-width: 600px) {
+    html{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        font-size: 14px;
+        max-width: fit-content;
+    }
+
+    nav{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    b{
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .category{
+        display: inline;
+        width: auto;
+    }
+
+    .product-grid{
+        width: 80%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .footer{
+        margin-top: 100px;
+    }
+
+    .footer p{
+        font-size: small;
+    }
+
+    .not-found-message {
+        position: fixed;
+        transform: translate(100%, 200%);
+    }
+
+    .gambar-00 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .gambar-01 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container-00{
+        text-align: center;
+        display: block;
+    }
+
+    .main-container-01{
+        text-align: center;
+        display: block;
+    }
+    
+    .namecard {
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .namecard .details, .namecard .photo {
+        width: 80%;
+    }
+
+    .team.visible{
+        padding-bottom: 10px;
+    }
+
+    .namecard{
+        width: 50%;
+        height: auto;
+    }
+
+    .namecard.active {
+        width: 80%;
+        height: auto;
+    }
+
+    #next{
+        z-index: 20;
+        transform: translate(250%, 900%);
+    }
+
+    .socmed-container{
+        width: 60%;
+    }
+
+    /* Adjust styles for smaller screens... */
+}
+
+/* CSS for screens smaller than 400px */
+@media (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    /* Adjust styles for even smaller screens... */
+}

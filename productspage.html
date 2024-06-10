@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Art Supplies Store</title>
+        <link rel="stylesheet" href="styles.css">
+    
+        <!-- import font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+<body class="page02">
+    <header>
+        <nav>
+            <b>Art Supply Shop</b>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="productspage.html" class="current">Products</a></li>
+                <li><a href="aboutpage.html">About</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="#"><img src="aset/svg/user-svgrepo-com white1.svg"></a></li>
+                <li><a href="#"><img src="aset/svg/cart-svgrepo-com white.svg"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input class="search" type="text" placeholder="Search products...">
+        <div class="not-found-message" style="display: none;">Product not found</div>
+    </div>
+
+    <!-- HTML -->
+    <div class="sidebar">
+        <div class="nav02">
+            <ul>
+                <li><a href="#category1">Paints</a></li>
+                <li><a href="#category2">Brushes</a></li>
+                <li><a href="#category3">Canvas</a></li>
+                <li><a href="#category4">Sketchbooks</a></li>
+                <li><a href="#category5">Drawing Tools</a></li>
+                <li><a href="#category6">Easels</a></li>
+                <li><a href="#category7">Palletes</a></li>
+                <li><a href="#category8">Sculpting Tools</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <!-- Category 1 -->
+        <div id="category1" class="category">
+            <h2>Paints</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/acrylic-paint-set.jpg" alt="Product 1">
+                    <h3>Acrylic Paint Set</h3>
+                    <p class="desc">A set of 12 vibrant acrylic paints suitable for all surfaces.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>23.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/oil-paint-starter-kit.jpg" alt="Product 1">
+                    <h3>Oil Paint Starter Kit</h3>
+                    <p class="desc">Perfect for beginners, this kit includes 10 oil paints and brushes.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>23.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/watercolor24.jpg" alt="Product 1">
+                    <h3>Watercolor Paint Tubes</h3>
+                    <p class="desc">Set of 24 watercolor paint tubes with rich pigments.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>23.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div id="category2" class="category">
+            <h2>Brushes</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/professional-paint-brushes.jpg" alt="Product 1">
+                    <h3>Professional Paint Brushes</h3>
+                    <p class="desc">High-quality brushes in various sizes for detailed artwork.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>19.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/fan-brush-set.jpg" alt="Product 1">
+                    <h3>Fan Brush Set</h3>
+                    <p class="desc">A set of fan brushes ideal for creating textures and blending.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>12.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div id="category3" class="category">
+            <h2>Canvas</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/stretched-canvas-pack.jpg" alt="Product 1">
+                    <h3>Stretched Canvas Pack</h3>
+                    <p class="desc">Pack of 5 pre-stretched canvases ready for painting.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>40.00</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/mini-canvas-set.jpg" alt="Product 1">
+                    <h3>Mini Canvas Set</h3>
+                    <p class="desc">Set of 10 small canvases perfect for miniatures and studies.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>15.50</p>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div id="category4" class="category">
+            <h2>Sketchbooks</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/hardcover-sketchbook.jpg" alt="Product 1">
+                    <h3>Hardcover Sketchbook</h3>
+                    <p class="desc">Durable hardcover sketchbook with 100 sheets of high-quality paper.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>27.75</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/spiral-sketchpad.jpg" alt="Product 1">
+                    <h3>Spiral Sketch Pad</h3>
+                    <p class="desc">Portable sketch pad with a spiral binding and 80 sheets.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>10.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div id="category5" class="category">
+            <h2>Drawing Tools</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/graphite-pencil-set.jpg" alt="Product 1">
+                    <h3>Graphite Pencil Set</h3>
+                    <p class="desc">Set of 12 graphite pencils in different grades for sketching.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>8.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/colored-pencil.jpg" alt="Product 1">
+                    <h3>Colored Pencil</h3>
+                    <p class="desc">Set of 24 vibrant colored pencils for detailed artwork.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>14.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div id="category6" class="category">
+            <h2>Easels</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/portable-easel.jpg" alt="Product 1">
+                    <h3>Portable Easel</h3>
+                    <p class="desc">Lightweight and portable easel for indoor and outdoor use.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>24.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/wooden-studio-easel.jpg" alt="Product 1">
+                    <h3>Wooden Studio Easel</h3>
+                    <p class="desc">Sturdy wooden easel perfect for studio work.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>75.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 7 -->
+        <div id="category7" class="category">
+            <h2>Palletes</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/plastic-pallete.jpg" alt="Product 1">
+                    <h3>Plastic Palletes</h3>
+                    <p class="desc">Durable plastic palette with multiple wells for mixing colors.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>5.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/wooden-pallete.jpg" alt="Product 1">
+                    <h3>Wooden Pallete</h3>
+                    <p class="desc">Traditional wooden palette ideal for oil painting.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>12.49</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 8 -->
+        <div id="category8" class="category">
+            <h2>Sculpting Tools</h2>
+
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/clay-sculpting-tool.jpg" alt="Product 1">
+                    <h3>Clay Sculpting Tool</h3>
+                    <p class="desc">Set of 10 tools for detailed clay sculpting and modeling.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>18.99</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product">
+                    <img class="small-img" src="aset/product-img/sculpting-wire.jpg" alt="Product 1">
+                    <h3>Sculpting Wire</h3>
+                    <p class="desc">Flexible wire for armature building and sculpting support.</p>
+                    <div class="price">
+                        <p>Price</p>
+                        <p>7.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Art Supplies Store. All rights reserved.</p>
+    </div>
+    
+    <script src="search.js"></script> <!-- taut -->
+</body>
+</html>
